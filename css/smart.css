@@ -1,5 +1,68 @@
-@media (min-width: 0px) and (max-width: 780px) {
+@media screen and (max-width: 768px) {
 	.banner {
 		display: none;
+	}
+	.header {
+		clear: both;
+		width: 100%;
+	}
+	.header img.header-logo {
+		float: none;
+		display: block;
+		margin: auto;
+	}
+	.header .info {
+		float: none;
+		display: block;
+		margin: auto;
+		text-align: center;
+	}
+
+	div.main {
+		width: 100%;
+	}
+	div.main .left-panel {
+		width: 100%;
+		float: none;
+		display: block;
+	}
+	div.main .first-content {
+		width: 100%;
+	}
+	.first-content img {
+		float: none;
+		display: block;
+		margin: auto;
+	}
+	.first-content .text-content {
+		float: none;
+		display: block;
+		width: 100%;
+	}
+	.second-content {
+		width: 100%;
+	}
+	.second-content .content-box {
+		float: none;
+		display: block;
+		margin: 8px auto;
+	}
+	div.right-panel {
+		display: none;
+	}
+
+	div.footer {
+		width: 100%;
+	}
+	div.footer .content {
+		width: 100%;
+	}
+	.footer .content-box-1 {
+		text-align: center;
+	}
+	.footer .content-box-1,.content-box-2,.content-box-3 {
+		float: none !important;
+		display: block !important;
+		margin: auto !important;
 	}
 }
