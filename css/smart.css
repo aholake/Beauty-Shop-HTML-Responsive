@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 644px) {
 	.banner {
 		display: none;
 	}
@@ -6,7 +6,11 @@
 		clear: both;
 		width: 100%;
 	}
+	.header h4 {
+		text-align: center;
+	}
 	.header img.header-logo {
+		width: 100%;
 		float: none;
 		display: block;
 		margin: auto;
@@ -41,14 +45,19 @@
 	}
 	.second-content {
 		width: 100%;
+		text-align: center;
 	}
 	.second-content .content-box {
 		float: none;
-		display: block;
+		display: inline-block;
 		margin: 8px auto;
 	}
 	div.right-panel {
-		display: none;
+		float: none;
+		width: 100%;
+	}
+	div.right-panel .item {
+		margin: 8px auto;
 	}
 
 	div.footer {
@@ -64,5 +73,8 @@
 		float: none !important;
 		display: block !important;
 		margin: auto !important;
+	}
+	a.page-top {
+		left: 75%;
 	}
 }
