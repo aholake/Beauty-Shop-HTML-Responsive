@@ -85,6 +85,9 @@
 		display: block !important;
 		margin: auto;
 	}
+	nav.mean-nav ul li a:hover {
+		background: url("../images/bg_menu_sub.jpg") no-repeat center !important;
+	}
 
 	li.subNav a {
 		line-height: 47px;
