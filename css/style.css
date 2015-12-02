@@ -36,17 +36,14 @@ ul {
 	color: #f0831e;
 }
 /*menu*/
-div.nav{	
-	width:100%;
-	height:55px;
-	display:inline-block;
-	position:relative;
-	z-index:999;
-	float:left;
-	background:url(../images/bg_menu.jpg) repeat-x left top;
-	margin:0px 0 0 0;
-	}
-div.menu{
+nav {
+	width: 100%;
+	height: 55px;
+	border-top: 1px solid #c2c2c2;
+	border-bottom: 1px solid #c2c2c2;
+	text-align: center;
+}
+div.menu {
 	height: auto;
     margin: 0 auto;
     width: 100%;
@@ -54,117 +51,84 @@ div.menu{
 	display:block;
 	min-width:973px;
 	max-width:973px;
-	}
-div.menu ul{
-	margin:1px 0 0 0;
-	padding:0;
-	background:url(../images/line_menu.jpg) no-repeat right center;
-	width:100%;
-	display:inline-block;
-	height:53px;
-	}
-div.menu ul li{
-	float:left;
-	width:133px;
-	height:53px;
-	background:url(../images/line_menu.jpg) no-repeat left center;
-	padding:0 3px;
-	}
-							
-div.menu ul li a{
-	width:100%;
-	height:53px;
-	text-align:center;
-	display:block;
-	position:relative;
-	}	
-div.menu ul li a.menu_1:hover img,
-div.menu ul li.menu_1 a.active img,
-div.menu ul li a.menu_2:hover img,
-div.menu ul li.menu_2 a.active img,
-div.menu ul li a.menu_3:hover img,
-div.menu ul li.menu_3 a.active img,
-div.menu ul li a.menu_4:hover img,
-div.menu ul li.menu_4 a.active img,
-div.menu ul li a.menu_5:hover img,
-div.menu ul li.menu_5 a.active img,
-div.menu ul li a.menu_6:hover img,
-div.menu ul li.menu_6 a.active img,
-div.menu ul li a.menu_7:hover img,
-div.menu ul li.menu_7 a.active img{
-	display:none;
-	}
-			
-div.menu ul li a.menu_1:hover,
-div.menu ul li.menu_1 a.active{
-	background:url(../images/menu_1_hover.jpg) no-repeat center center;
-	}
-div.menu ul li a.menu_2:hover,
-div.menu ul li.menu_2 a.active{
-	background:url(../images/menu_2_hover.jpg) no-repeat center center;
-	}
-div.menu ul li a.menu_3:hover,
-div.menu ul li.menu_3 a.active{
-	background:url(../images/menu_3_hover.jpg) no-repeat center center;
-	}
-div.menu ul li a.menu_4:hover,
-div.menu ul li.menu_4 a.active{
-	background:url(../images/menu_4_hover.jpg) no-repeat center center;
-	}
-div.menu ul li a.menu_5:hover,
-div.menu ul li.menu_5 a.active{
-	background:url(../images/menu_5_hover.jpg) no-repeat center center;
-	}
-div.menu ul li a.menu_6:hover,
-div.menu ul li.menu_6 a.active{
-	background:url(../images/menu_6_hover.jpg) no-repeat center center;
-	}
-div.menu ul li a.menu_7:hover,
-div.menu ul li.menu_7 a.active{
-	background:url(../images/menu_7_hover.jpg) no-repeat center center;
-	}
-							
-div.menu ul li.menu_4 ul.subNav,
-div.menu ul li.menu_3 ul.subNav {
-    display: none;
 }
-div.menu li.menu_4:hover ul.subNav,
-div.menu li.menu_3:hover ul.subNav {
-    background: none repeat scroll 0 0 #ffc472;
-    display: block;
-    height: auto;
-    margin-left: -3px;
-    position: absolute;
-    top: 53px;
-    width: 141px;
+div.menu ul {
+	padding: 0;
+	width: 100%;
+	height: 53px;
+	display: inline-block;
+	background: url("../images/line_menu.jpg") no-repeat right center;
+}
+div.menu ul li {
+	width: 133px;
+	float: left;
+	background: url("../images/line_menu.jpg") no-repeat left center;
+	position: relative;
+	padding: 0 3px;
+}
+div.menu ul li a {
+	width: 100%;
+	height: 53px;
+	text-align: center;
+	display: block;
+}
+div.menu ul li a.menu-2:hover img,
+div.menu ul li a.menu-3:hover img,
+div.menu ul li a.menu-4:hover img,
+div.menu ul li a.menu-5:hover img,
+div.menu ul li a.menu-6:hover img,
+div.menu ul li a.menu-7:hover img {
+	display: none;
+}
+div.menu ul li ul.subNav {
+	display: none;
+}
+div.menu ul li:hover ul.subNav {
+	display: block;
+}
+div.menu ul li ul.subNav {
+	width: 140px;
+	height: auto;
+	position: absolute;
+	z-index: 999;
+	background: #f9bc75;
 }
 
 div.menu ul li ul.subNav li.subNav {
-    height: auto !important;
-    margin: 0 !important;
-    padding: 10px 0 9px 0;
-    text-align: center;
-    width: 100%;
-	border:none;
-	border-bottom:1px solid #d19c5d;
-	background:none;
+	background: none;
+	border-bottom: 1px solid #c2c2c2;
 }
-div.menu ul li ul.subNav li.subNav_no_b {
-	border-bottom:none;
-	}
-div.menu ul li ul.subNav li.subNav:hover {
-    background: url(../images/bg_menu_sub.jpg) no-repeat center center;
-	}
-div.menu ul li ul.subNav li.subNav a.subNav {
-    color: #66402b;
-    float: none !important;
-    font-size: 14px;
-    height: auto !important;
-    text-align: center;
-	z-index:999999999 !important;
-}	
-div.menu ul li ul.subNav li.subNav a.subNav:hover {
-    color: #ffffff;
+div.menu ul li ul.subNav li.last-subNav {
+	border-bottom: none;
+}
+div.menu ul li ul.subNav li.subNav a:hover {
+	background: url("../images/bg_menu_sub.jpg") no-repeat center;
+	color: #fff;
+}
+div.menu ul li ul.subNav li.subNav a {
+	height: 40px;
+	line-height: 40px;
+	color: #000;
+	text-decoration: none;
+}
+
+div.menu ul li a.menu-2:hover{
+	background: url(../images/menu_2_hover.jpg) no-repeat center;
+}
+div.menu ul li a.menu-3:hover{
+	background: url(../images/menu_3_hover.jpg) no-repeat center;
+}
+div.menu ul li a.menu-4:hover{
+	background: url(../images/menu_4_hover.jpg) no-repeat center;
+}
+div.menu ul li a.menu-5:hover{
+	background: url(../images/menu_5_hover.jpg) no-repeat center;
+}
+div.menu ul li a.menu-6:hover{
+	background: url(../images/menu_6_hover.jpg) no-repeat center;
+}
+div.menu ul li a.menu-7:hover{
+	background: url(../images/menu_7_hover.jpg) no-repeat center;
 }
 
 .banner {

@@ -77,4 +77,32 @@
 	a.page-top {
 		left: 75%;
 	}
+	/*.mean-container .mean-nav ul li a img {
+		display: block !important;
+		margin: auto;
+	}*/
+	nav.mean-nav ul li a img {
+		display: block !important;
+		margin: auto;
+	}
+
+	li.subNav a {
+		line-height: 47px;
+		color: #000;
+		text-decoration: none;
+	}
+
+	li.subNav a:hover {
+		text-decoration: underline !important;
+	}
+
+	a {
+		text-decoration: none !important;
+	}
+	nav.mean-nav {
+		border:none;
+	}
+	nav.mean-nav ul li a {
+		height: 50px !important;
+	}
 }

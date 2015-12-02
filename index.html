@@ -36,62 +36,36 @@
 			<h4 class="orange-text">定休日　火曜日</h4>
 		</div>
 	</div>
-	<!-- Implement from old source -->
-	<div class="nav">
-		<div class="menu" id="globalNavi">
-			<ul> 
-				<li class="menu_1">
-					<a class="menu_1 active" href="index.html"><img alt="HOME" src="images/menu_1.jpg" alt="home"/></a>
-				</li>
-				<li class="menu_2">
-					<a class="menu_2" href="introduction.html"><img alt="店舗紹介" src="images/menu_2.jpg" alt="menu1"/></a>   
-				</li>
-				<li class="menu_3">
-					<a class="menu_3"><img alt="エステ" src="images/menu_3.jpg" alt="menu1"/></a> 
+	<!-- Menu -->
+	<nav>
+		<div class="menu">
+			<ul>
+				<li><a class="menu-1" href="#"><img src="images/menu_1_hover.jpg"></a></li>
+				<li><a class="menu-2" href="#"><img src="images/menu_2.jpg"></a></li>
+				<li>
+					<a class="menu-3" href="#"><img src="images/menu_3.jpg"></a>
 					<ul class="subNav">
-						<li class="subNav">
-							<a class="subNav" href="facial.html">フェイシャル</a>
-						</li>
-						<li class="subNav">
-							<a class="subNav"href="slim.html">スリム</a>
-						</li>
-						<li class="subNav">
-							<a class="subNav" href="depilation.html">脱毛</a>
-						</li>
-						<li class="subNav subNav_no_b">
-							<a class="subNav" href="bihda.html">美肌再生プログラム</a>
-						</li>
-
-					</ul>  
-				</li>
-				<li class="menu_4">
-					<a class="menu_4"><img alt="ヘアクリニック" src="images/menu_4.jpg" alt="menu1"/></a>
-					<ul class="subNav">
-						<li class="subNav">
-							<a class="subNav" href="acty.html">アクティについて</a>
-						</li>
-						<li class="subNav">
-							<a class="subNav" href="hair_growth.html">発毛</a>
-						</li>
-						<li class="subNav subNav_no_b">
-							<a class="subNav" href="case.html">症例</a>
-						</li>
-
+						<li class="subNav"><a href="#">フェイシャル</a></li>
+						<li class="subNav"><a href="#">スリム</a></li>
+						<li class="subNav"><a href="#">脱毛</a></li>
+						<li class="subNav last-subNav"><a href="#">美肌再生プログラム</a></li>
 					</ul>
 				</li>
-				<li class="menu_5">
-					<a class="menu_5" href="qa.html"><img alt="よくあるご質問" src="images/menu_5.jpg" alt="menu1"/></a>
+				<li>
+					<a class="menu-4" href="#"><img src="images/menu_4.jpg"></a>
+					<ul class="subNav">
+						<li class="subNav"><a href="#">フェイシャル</a></li>
+						<li class="subNav"><a href="#">脱毛</a></li>
+						<li class="subNav last-subNav"><a href="#">美肌再生プログラム</a></li>
+					</ul>
 				</li>
-				<li class="menu_6">
-					<a class="menu_6" href="#"><img alt="お客様の声" src="images/menu_6.jpg" alt="menu1"/></a>
-				</li>
-				<li class="menu_7">
-					<a class="menu_7" href="access.html"><img alt="アクセス" src="images/menu_7.jpg" alt="menu1"/></a>
-				</li>
-
+				<li><a class="menu-5" href="#"><img src="images/menu_5.jpg"></a></li>
+				<li><a class="menu-6" href="#"><img src="images/menu_6.jpg"></a></li>
+				<li><a class="menu-7" href="#"><img src="images/menu_7.jpg"></a></li>
 			</ul>
 		</div>
-	</div>
+	</nav>
+
 
 	<div class="banner">
 		<div class="slide">
@@ -267,5 +241,11 @@
 	<a id="btnTop" class="page-top">PAGE TOP</a>
 	<script type="text/javascript" src="js/jquery.meanmenu.min.js"></script>
 	<script type="text/javascript" src="js/behavior.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			$("nav .menu").meanmenu();
+		});
+	</script>
 </body>
 </html>
