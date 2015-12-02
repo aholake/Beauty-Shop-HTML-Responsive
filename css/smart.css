@@ -81,6 +81,10 @@
 		display: block !important;
 		margin: auto;
 	}*/
+	nav {
+		display: none;
+	}
+
 	nav.mean-nav ul li a img {
 		display: block !important;
 		margin: auto;
